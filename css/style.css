@@ -181,21 +181,13 @@ html {
           flex-direction: column;
 }
 .main {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   background-color: #6257fe;
 }
 .main__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  min-height: 100vh;
 }
 @media (max-width: 767.98px) {
   .main__container {
@@ -304,6 +296,9 @@ html {
 .text {
   line-height: 1.6;
 }
+.text p:not(:last-child) {
+  margin: 0px 0px 30px 0px;
+}
 
 .button {
   display: inline-block;
@@ -328,5 +323,99 @@ html {
 @media (max-width: 767.98px) {
   .button {
     width: 100%;
+  }
+}
+
+.about {
+  position: relative;
+  padding: 150px 0px;
+}
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #100c46;
+}
+@media (max-width: 1200px) {
+  .about {
+    padding: 50px 0px;
+  }
+}
+@media (max-width: 991.98px) {
+  .about {
+    background-color: #100c46;
+    padding: 50px 0px 0px 0px;
+  }
+  .about::before {
+    display: none;
+  }
+}
+.about__container {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+@media (max-width: 991.98px) {
+  .about__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+  }
+}
+.about__body {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 50%;
+          flex: 0 1 50%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0px 160px 0px 0px;
+}
+@media (max-width: 991.98px) {
+  .about__body {
+    padding: 0;
+    margin: 0px 0px 30px 0px;
+  }
+}
+.about__header {
+  color: #6257fe;
+}
+.about__header:not(:last-child) {
+  margin: 0px 0px 15px 0px;
+}
+.about__text {
+  color: rgba(255, 255, 255, 0.8);
+}
+.about__image {
+  position: relative;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0px 0px 47.5% 0px;
+  margin: 0px 0px 0px -113px;
+}
+.about__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 991.98px) {
+  .about__image {
+    margin: 0px -15px;
   }
 }
