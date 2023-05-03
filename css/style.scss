@@ -31,7 +31,7 @@ $mainColor: #100c46;
 
 @import "_null";
 
-//=================== Общие стили  ================================//
+//============= Общие стили  ===============//
 
 html {
   scroll-behavior: smooth;
@@ -82,9 +82,9 @@ html {
   }
 }
 
-//=================== Общие стили  ================================//
+//================ Общие стили  ===============//
 
-//=================== header  ================================//
+//================ header  ===================//
 .header {
   z-index: 50;
   display: flex;
@@ -116,9 +116,9 @@ html {
   }
 }
 
-//=================== header  ================================//
+//=================== header  ===================//
 
-//=================== main  ================================//
+//=================== main  ====================//
 .page {
   flex: 1 1 auto;
   display: flex;
@@ -279,9 +279,9 @@ html {
 }
 //=========== общие блоки =================//
 
-//=================== main ================================//
+//=================== main ===================//
 
-//=================== about ================================//
+//=================== about =================//
 
 .about {
   position: relative;
@@ -367,9 +367,9 @@ html {
     }
   }
 }
-//=================== about ================================//
+//=================== about ====================//
 
-//=================== services ================================//
+//=================== services ================//
 
 .services {
   overflow: hidden;
@@ -521,4 +521,196 @@ html {
   }
 }
 
-//=================== services ================================//
+//=================== services ===================//
+
+//=================== portfolio =================//
+
+.portfolio {
+  padding: 145px 0px;
+  @media (max-width: 1200px) {
+    padding: 50px 0px 50px 0px;
+  }
+  // .portfolio__container
+
+  &__container {
+  }
+
+  // .portfolio__header
+
+  &__header {
+    &:not(:last-child) {
+      margin: 0px 0px 60px 0px;
+    }
+    @media (max-width: 1200px) {
+      &:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+  }
+
+  // .portfolio__items
+
+  &__items {
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 767.98px) {
+      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  // .portfolio__item
+
+  &__item {
+    position: relative;
+    padding: 0px 0px 135% 0px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.header-block {
+  // .header-block_center
+
+  &_center {
+    text-align: center;
+  }
+}
+
+//=============== portfolio ==================//
+
+//=============== team ======================//
+
+.team {
+  padding: 30px 0px 150px 0px;
+  @media (max-width: 1200px) {
+    padding: 0px 0px 50px 0px;
+  }
+  // .team__container
+
+  &__container {
+  }
+
+  // .team__header
+
+  &__header {
+    &:not(:last-child) {
+      margin: 0px 0px 60px 0px;
+    }
+    @media (max-width: 1200px) {
+      &:not(:last-child) {
+        margin: 0px 0px 20px 0px;
+      }
+    }
+  }
+
+  // .team__items
+
+  &__items {
+    display: grid;
+    gap: 23px;
+    grid-template-columns: repeat(4, 1fr);
+    @media (max-width: 991.98px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media (max-width: 767.98px) {
+      gap: 15px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  // .team__item
+
+  &__item {
+  }
+}
+.header-block {
+  // .header-block_center
+
+  &_center {
+    text-align: center;
+  }
+}
+
+.item-team {
+  position: relative;
+  // .item-team__image
+
+  &__image {
+    position: relative;
+    padding: 0px 0px 135% 0px;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  // .item-team__info
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background-color: rgba(98, 87, 254, 0.8);
+  }
+
+  // .item-team__body
+
+  &__body {
+    color: #ffffff;
+    flex: 1 0 auto;
+  }
+
+  // .item-team__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.3;
+    margin: 0px 0px 5px 0px;
+  }
+
+  // .item-team__position
+
+  &__position {
+    font-size: 14px;
+    line-height: 2.28;
+  }
+
+  // .item-team__social
+
+  &__social {
+  }
+}
+.social-item {
+  display: flex;
+  gap: 13px;
+  // .social-item__item
+
+  &__item {
+  }
+}
+
+//============== team =======================//
