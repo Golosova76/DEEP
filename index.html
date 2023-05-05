@@ -10,7 +10,7 @@
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
+      <header id="up" class="header">
         <div class="header__logo">
           <img src="img/header/logo.svg" alt="DEEP" />
         </div>
@@ -238,8 +238,78 @@
             </div>
           </div>
         </section>
+        <section class="page__section contacts">
+          <div class="contacts__container">
+            <div class="contacts__body">
+              <div class="contacts__header header-block">
+                <div class="header-block__label">Keep in touch</div>
+                <h2 class="header-block__title">Contact us</h2>
+              </div>
+              <form action="#" class="contacts__form form">
+                <div class="form__line">
+                  <label for="i-1" class="form__label">Name</label>
+                  <input id="i-1" name="name" type="text" class="form__input" />
+                </div>
+                <div class="form__line">
+                  <label for="i-2" class="form__label">Email</label>
+                  <input id="i-2" name="email" type="email" required class="form__input" />
+                </div>
+                <div class="form__line">
+                  <label for="i-3" class="form__label">Subject</label>
+                  <input id="i-3" name="subject" type="text" class="form__input" />
+                </div>
+                <div class="form__line">
+                  <label for="i-4" class="form__label">Message</label>
+                  <textarea name="message" id="i-4" class="form__input"></textarea>
+                </div>
+                <div class="form__button">
+                  <button type="submit" class="button button_dark">Get Started</button>
+                </div>
+              </form>
+            </div>
+            <div class="contacts__info">
+              <div class="info-contacts">
+                <div class="info-contacts__map">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d17517.608535365158!2d38.81813245!3d56.71374815000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b3597cea46ac7f%3A0x3515a7459a91aa10!2z0JTQtdC90LTRgNC-0LvQvtCz0LjRh9C10YHQutC40Lkg0YHQsNC0INC40LwuINChLtCkLtCl0LDRgNC40YLQvtC90L7QstCw!5e0!3m2!1sru!2sru!4v1683267865922!5m2!1sru!2sru"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
+                </div>
+                <div class="info-contacts__content">
+                  <div class="info-contacts__block">
+                    <div class="info-contacts__title info-contacts__title_phone">Phone</div>
+                    <a href="tel:+918899556645" class="info-contacts__item">+91 88995 56645</a>
+                    <a href="tel:+04288569896" class="info-contacts__item">+04288 569 896</a>
+                  </div>
+                  <div class="info-contacts__block">
+                    <div class="info-contacts__title info-contacts__title_email">Email</div>
+                    <a href="mailto:www@www.com" class="info-contacts__item">www@www.com</a>
+                  </div>
+                  <div class="info-contacts__block">
+                    <div class="info-contacts__title info-contacts__title_address">Address</div>
+                    <div class="info-contacts__text">
+                      <p>25, 5th Cross Street,</p>
+                      <p>Bhommana Halli,</p>
+                      <p>Bangalore - 785 956</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="footer__container">
+          <div class="footer__body">
+            <div class="footer__copy">© Deep Dash 2021</div>
+            <a href="#up" class="footer__up"></a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="js/script.js"></script>
   </body>
